@@ -1,0 +1,16 @@
+C:\Users\pc\Desktop\tempt\Weather\Weather\bin\Debug\netstandard2.0\Weather.deps.json
+C:\Users\pc\Desktop\tempt\Weather\Weather\bin\Debug\netstandard2.0\Weather.dll
+C:\Users\pc\Desktop\tempt\Weather\Weather\bin\Debug\netstandard2.0\Weather.pdb
+C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\Weather.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\Weather.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\Views\CurrentWeatherPage.xaml.g.cs
+C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\Weather.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\Weather.AssemblyInfo.cs
+C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\Weather.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\Weather.dll
+C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\refint\Weather.dll
+C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\Weather.pdb
+C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\ref\Weather.dll

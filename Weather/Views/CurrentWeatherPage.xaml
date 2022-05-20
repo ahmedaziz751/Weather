@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+    x:Class="Weather.Views.CurrentWeatherPage">
+    <ContentPage.Content>
+        <ScrollView Orientation="Neither">
+            <AbsoluteLayout >
+                <Image x:Name="background"
+                       Source="morning.png"
+                       AbsoluteLayout.LayoutBounds="0,-60,412,892" />
+                <Label x:Name="locationName"
+                       FontFamily="Dosis"
+                       HorizontalTextAlignment="Center"
+                       FontSize="30"
+                       TextColor="#ffffff"
+                       AbsoluteLayout.LayoutBounds="100,4,202,59" />
+
+                <ImageButton x:Name="add"
+                             Source="add.png"
+                             AbsoluteLayout.LayoutBounds="5,4,35,35" />
+
+                <Label x:Name="currentDegreeTxt"
+                       FontFamily="Dosis"
+                       HorizontalTextAlignment="Center"
+                       FontSize="75"
+                       TextColor="#ffffff"
+                       AbsoluteLayout.LayoutBounds="10,88,197,147.5" />
+
+                <Label x:Name="currentWeatherStatueTxt"
+                       FontFamily="Dosis"
+                       HorizontalTextAlignment="Center"
+                       FontSize="20"
+                       TextColor="#ffffff"
+                       AbsoluteLayout.LayoutBounds="9,183,211,78" />
+
+                <Image x:Name="currentWeatherIcon"
+                       AbsoluteLayout.LayoutBounds="235,88,166,166" />
+
+
+
+                <Image x:Name="rectangle_8"
+                       Source="rectangle_8.png"
+                       AbsoluteLayout.LayoutBounds="134,480,148,89" />
+
+                <Image x:Name="wet"
+                       Source="wet.png"
+                       AbsoluteLayout.LayoutBounds="158,490,35,35" />
+
+                <Label x:Name="wetTxt"
+                       FontFamily="Dosis"
+                       HorizontalTextAlignment="Center"
+                       FontSize="15"
+                       TextColor="#ffffff"
+                       AbsoluteLayout.LayoutBounds="160,531,36,29.5" />
+
+                <Image x:Name="wind"
+                       Source="windm.png"
+                       AbsoluteLayout.LayoutBounds="224,490,35,35" />
+                <Label x:Name="windTxt"
+                       FontFamily="Dosis"
+                       HorizontalTextAlignment="Center"
+                       FontSize="15"
+                       TextColor="#ffffff"
+                       AbsoluteLayout.LayoutBounds="215,531,60,29.5" />
+
+                <Image x:Name="rectangle_5"
+                       Source="rectangle_5.png"
+                       AbsoluteLayout.LayoutBounds="0,582,98,196" />
+
+                <Label x:Name="day1Txt"
+                       FontFamily="Dosis"
+                       HorizontalTextAlignment="Center"
+                       FontSize="18"
+                       TextColor="#ffffff"
+                       AbsoluteLayout.LayoutBounds="-3,592,98,40" />
+
+                <Image x:Name="day1icon"
+                       AbsoluteLayout.LayoutBounds="21,631,58,58" />
+
+                <Label x:Name="day1DegTxt"
+                       FontFamily="Dosis"
+                       HorizontalTextAlignment="Center"
+                       FontSize="20"
+                       TextColor="#ffffff"
+                       AbsoluteLayout.LayoutBounds="32,712,36,40" />
+
+                <Image x:Name="rectangle_6"
+                       Source="rectangle_6.png"
+                       AbsoluteLayout.LayoutBounds="104,582,98,196" />
+
+                <Label x:Name="day2Txt"
+                       FontFamily="Dosis"
+                       HorizontalTextAlignment="Center"
+                       FontSize="18"
+                       TextColor="#ffffff"
+                       AbsoluteLayout.LayoutBounds="101,592,98,40" />
+
+                <Image x:Name="day2icon"
+                       AbsoluteLayout.LayoutBounds="124,631,58,58" />
+
+                <Label x:Name="day2DegTxt"
+                       FontFamily="Dosis"
+                       HorizontalTextAlignment="Center"
+                       FontSize="20"
+                       TextColor="#ffffff"
+                       AbsoluteLayout.LayoutBounds="136,712,36,40" />
+
+
+                <Image x:Name="rectangle_7"
+                       Source="rectangle_7.png"
+                       AbsoluteLayout.LayoutBounds="208,582,98,196" />
+
+                <Label x:Name="day3Txt"
+                       FontFamily="Dosis"
+                       HorizontalTextAlignment="Center"
+                       FontSize="18"
+                       TextColor="#ffffff"
+                       AbsoluteLayout.LayoutBounds="206,592,98,40" />
+
+                <Image x:Name="day3icon"
+                       AbsoluteLayout.LayoutBounds="230,631,58,58" />
+
+
+                <Label x:Name="day3DegTxt"
+                       FontFamily="Dosis"
+                       HorizontalTextAlignment="Center"
+                       FontSize="20"
+                       TextColor="#ffffff"
+                       AbsoluteLayout.LayoutBounds="240,712,36,40" />
+
+
+
+                <Image x:Name="rectangle_4"
+                       Source="rectangle_4.png"
+                       AbsoluteLayout.LayoutBounds="312,582,98,196" />
+
+                <Label x:Name="day4Txt"
+                       FontFamily="Dosis"
+                       HorizontalTextAlignment="Center"
+                       FontSize="18"
+                       TextColor="#ffffff"
+                       AbsoluteLayout.LayoutBounds="309,592,98,40" />
+
+                <Image x:Name="day4icon"
+                       AbsoluteLayout.LayoutBounds="332,631,58,58" />
+
+                <Label x:Name="day4DegTxt"
+                       FontFamily="Dosis"
+                       HorizontalTextAlignment="Center"
+                       FontSize="20"
+                       TextColor="#ffffff"
+                       AbsoluteLayout.LayoutBounds="344,712,36,40" />
+
+                <Image x:Name="loading"
+                       Source="loading.png"
+                       AbsoluteLayout.LayoutBounds="0,-35,412,892"
+                       />
+
+
+            </AbsoluteLayout>
+
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
