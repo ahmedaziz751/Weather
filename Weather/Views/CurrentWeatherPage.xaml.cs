@@ -10,6 +10,7 @@ using Weather.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
+using Rg.Plugins.Popup.Services;
 
 namespace Weather.Views
 {
@@ -152,7 +153,7 @@ namespace Weather.Views
 
             if (result.Successful)
             {
-                try
+                try 
                 {
                     var forcastInfo = JsonConvert.DeserializeObject<ForecastInfo>(result.Response);
 
@@ -203,5 +204,17 @@ namespace Weather.Views
             }
         }
 
+        private async void handleAddButton(object sender, EventArgs e)
+        {
+            await add.TranslateTo(Width / 2-26.25, Height / 2 - 26.25, 250, null);
+            await add.RelScaleTo(3,250,null);
+            await add.RelRotateTo(1710, 1500,Easing.CubicOut);
+            await PopupNavigation.Instance.PushAsync(new AddLocation());
+            await add.RelScaleTo(-3, 250, null);
+            await add.TranslateTo(5, 5, 250, null);
+            
+            
+
+        }
     }
 }

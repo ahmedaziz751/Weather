@@ -14,3 +14,4 @@ C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\Weather.dll
 C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\refint\Weather.dll
 C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\Weather.pdb
 C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\ref\Weather.dll
+C:\Users\pc\Desktop\tempt\Weather\Weather\obj\Debug\netstandard2.0\Views\AddLocation.xaml.g.cs

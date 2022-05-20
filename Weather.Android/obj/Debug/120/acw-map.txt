@@ -1,6 +1,12 @@
 Weather.Droid.MainActivity, Weather.Android;crc64a3c9a36a55b6fd6f.MainActivity
 Weather.Droid.MainActivity;crc64a3c9a36a55b6fd6f.MainActivity
 weather.droid.MainActivity;crc64a3c9a36a55b6fd6f.MainActivity
+Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer, Rg.Plugins.Popup;crc643dd37f507f3d9710.PopupPageRenderer
+Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer;crc643dd37f507f3d9710.PopupPageRenderer
+rg.plugins.popup.droid.renderers.PopupPageRenderer;crc643dd37f507f3d9710.PopupPageRenderer
+Rg.Plugins.Popup.Droid.Gestures.RgGestureDetectorListener, Rg.Plugins.Popup;crc64fdbeeba101bd56dc.RgGestureDetectorListener
+Rg.Plugins.Popup.Droid.Gestures.RgGestureDetectorListener;crc64fdbeeba101bd56dc.RgGestureDetectorListener
+rg.plugins.popup.droid.gestures.RgGestureDetectorListener;crc64fdbeeba101bd56dc.RgGestureDetectorListener
 AndroidX.Activity.IOnBackPressedDispatcherOwner, Xamarin.AndroidX.Activity;androidx.activity.OnBackPressedDispatcherOwner
 AndroidX.Activity.IOnBackPressedDispatcherOwner;androidx.activity.OnBackPressedDispatcherOwner
 androidx.activity.OnBackPressedDispatcherOwner;androidx.activity.OnBackPressedDispatcherOwner

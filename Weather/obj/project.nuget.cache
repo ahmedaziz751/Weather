@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "d47vmeK4JOKXlrm6y+nduPI+gTVWNJcl5fwcvJ1qAz8jvpFVPQ2CMQw4sBYi3/+epm+sObMvsqTL2RogeGecDg==",
+  "dgSpecHash": "WQzPPHIr6/+JuOZLPdXPKRbVcL3595At+qwhzXchKUI4s6p8xW+d/DKu18Y8nXuHeLKYSIyNuwf028O73x7mrg==",
   "success": true,
   "projectFilePath": "C:\\Users\\pc\\Desktop\\tempt\\Weather\\Weather\\Weather.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\rg.plugins.popup\\2.1.0\\rg.plugins.popup.2.1.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
