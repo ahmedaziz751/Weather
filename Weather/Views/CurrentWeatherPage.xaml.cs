@@ -12,6 +12,8 @@ using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
 using Rg.Plugins.Popup.Services;
 using Weather.Views;
+using System.IO;
+
 namespace Weather.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -58,40 +60,43 @@ namespace Weather.Views
             try
             {
 
-                if(ChangeLocation.newLocation!=null)
+                if (ChangeLocation.newLocation != null)
                 {
                     location = ChangeLocation.newLocation;
 
 
                     getWeatherInfo();
                 }
-                else {
+                else
+                {
+                    var connection = Connectivity.NetworkAccess;
 
-                    var request = new GeolocationRequest(GeolocationAccuracy.Best);
-                    var loc = await Geolocation.GetLocationAsync(request);
-
-                    if (loc != null)
+                    if (connection == NetworkAccess.Internet)
                     {
-                        latitude = loc.Latitude;
-                        longitude = loc.Longitude;
-                        location = await GetCity(loc);
+                        var request = new GeolocationRequest(GeolocationAccuracy.Best);
+                        var loc = await Geolocation.GetLocationAsync(request);
 
-
-                        getWeatherInfo();
+                        if (loc != null)
+                        {
+                            latitude = loc.Latitude;
+                            longitude = loc.Longitude;
+                            location = await GetCity(loc);
+                            getWeatherInfo();
+                        }
                     }
+                    else
+                    {
 
+                        await DisplayAlert("Exception 000035", "No Internet Conntection!", "K");
+
+                    }
                 }
 
-                
-
-
-
-
             }
-            catch (Exception ex)
+            catch (FeatureNotEnabledException ex)
             {
 
-                await DisplayAlert("Weather Info 20", ex.Message, "OK");
+                await DisplayAlert("Exception 000020", ex.Message, "K");
                 location = "istanbul";
                 getWeatherInfo();
 
@@ -130,7 +135,7 @@ namespace Weather.Views
 
                     var weatherInfo = JsonConvert.DeserializeObject<WeatherInfo>(result.Response);
 
-                    currentWeatherStatueTxt.Text = weatherInfo.weather[0].description.ToUpper();
+                    currentWeatherStatueTxt.Text = weatherInfo.weather[0].description;
                     currentWeatherIcon.Source = $"w{weatherInfo.weather[0].icon}";
                     locationName.Text = weatherInfo.name.ToUpper()+","+weatherInfo.sys.country.ToUpper();
                     currentDegreeTxt.Text = $"{weatherInfo.main.temp.ToString("0")}°";
@@ -143,15 +148,13 @@ namespace Weather.Views
                 }
                 catch (Exception ex)
                 {
-                    await DisplayAlert("Weather Info 23", ex.Message, "OK");
+                    await DisplayAlert("Exception 000023", ex.Message, "K");
                 }
             }
             else
             {
-                await DisplayAlert("Weather Info24", "No weather information found", "OK");
+                await DisplayAlert("Exception 000024", "Error! no infromation", "K");
                 location = "istanbul";
-
-
                 getWeatherInfo();
             }
         }
@@ -207,13 +210,12 @@ namespace Weather.Views
                 }
                 catch (Exception ex)
                 {
-                Debug.WriteLine(ex.ToString());
-                await DisplayAlert("Weather Info25", ex.ToString(), "OK");
+                    await DisplayAlert("Exeption 000025", ex.ToString(), "K");
                 }
             }
             else
             {
-                await DisplayAlert("Weather Info26", "No forecast information found", "OK");
+                await DisplayAlert("Exception 000026", "Error! no infromation", "K");
             }
         }
 

@@ -645,7 +645,6 @@ C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\res\drawable\rec
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\res\drawable\rectangle_7.png
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\res\drawable\rectangle_8.png
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\android\src\crc64a0e0a82d0db9a07d\Connectivity_EssentialsNetworkCallback.java
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\res\drawable\loading.png
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\lp\79\jl\files.cache
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\lp\93\jl\files.cache
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\lp\104\jl\files.cache
@@ -653,7 +652,6 @@ C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\android\assets\R
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\android\assets\Rg.Plugins.Popup.pdb
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\android\src\crc643dd37f507f3d9710\PopupPageRenderer.java
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\android\src\crc64fdbeeba101bd56dc\RgGestureDetectorListener.java
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\res\drawable\loadingspinner.gif
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\lp\59\jl\files.cache
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\lp\60\jl\files.cache
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\lp\66\jl\files.cache
@@ -705,4 +703,4 @@ C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\android\src\crc6
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\android\src\ffimageloading\cross\MvxCachedImageView.java
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\android\src\ffimageloading\cross\MvxSvgCachedImageView.java
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\android\src\ffimageloading\views\ImageViewAsync.java
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\res\drawable\hand.gif
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\res\drawable\loading.gif

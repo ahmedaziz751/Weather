@@ -30,7 +30,7 @@
                 <Label x:Name="locationName"
                        Text="London"
                        FontFamily="DosisSemiBold"
-                       FontSize="30"
+                       FontSize="25"
                        TextColor="#ffffff"
                        Grid.Row="0"
                        HorizontalOptions="Center"
@@ -62,12 +62,12 @@
                            FontSize="75"
                            TextColor="#ffffff" />
                     <Label x:Name="currentWeatherStatueTxt"
-                           Text="Sunny"
+                           Text="thunderstorm with heavy drizzle"
                            Margin="0,80,0,0"
                            Grid.Row="0"
                            FontFamily="DosisSemiBold"
-                           HorizontalTextAlignment="Center"
-                           FontSize="30"
+                           HorizontalTextAlignment="Start"
+                           FontSize="15"
                            TextColor="#ffffff" />
                 </Grid>
 
@@ -350,7 +350,7 @@
                              HorizontalOptions="Start"
                              WidthRequest="40"
                              BackgroundColor="#0000"
-                             Margin="10,5"
+                             Margin="10,0"
                              Clicked="handleAddButton" />
 
 
@@ -359,9 +359,10 @@
                          VerticalOptions="FillAndExpand"/>
 
             </Grid>
-            <BoxView x:Name="loadBack" Color="#161519" IsVisible="true" />
+            <BoxView x:Name="loadBack"
+                     Color="#030303" IsVisible="true" />
             <Image  x:Name="loading" 
-                Source="hand.gif"
+                Source="loading.gif"
                    IsAnimationPlaying="True" 
                    IsVisible="true"/>
 

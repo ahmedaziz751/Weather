@@ -1,4 +1,5 @@
 ﻿using Rg.Plugins.Popup.Pages;
+using Rg.Plugins.Popup.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,8 +24,11 @@ namespace Weather.Views
 
         private void Button_Clicked(object sender, EventArgs e)
         {
+
             Application.Current.Properties["Name"] = location.Text;
             ChangeLocation.newLocation = location.Text;
+            PopupPage page = this; 
+            PopupNavigation.Instance.RemovePageAsync(page);
             Navigation.PushAsync(new CurrentWeatherPage());
 
         }
