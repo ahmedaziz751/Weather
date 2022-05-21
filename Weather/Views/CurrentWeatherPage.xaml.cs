@@ -11,26 +11,18 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
 using Rg.Plugins.Popup.Services;
-
+using Weather.Views;
 namespace Weather.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CurrentWeatherPage : ContentPage
     {
+        
         public CurrentWeatherPage()
         {
             InitializeComponent();
             getLocation();
-
-
-            var metrics = DeviceDisplay.MainDisplayInfo;
-            var width = metrics.Width;
-            var height = metrics.Height;
-
-
             background.Source = $"{date()}.png";
-
-
         }
 
 
@@ -65,18 +57,32 @@ namespace Weather.Views
         {
             try
             {
-                var request = new GeolocationRequest(GeolocationAccuracy.Best);
-                var loc = await Geolocation.GetLocationAsync(request);
 
-
-                if (loc != null) { 
-                    latitude = loc.Latitude;
-                    longitude = loc.Longitude;
-                    location = await GetCity(loc);
+                if(ChangeLocation.newLocation!=null)
+                {
+                    location = ChangeLocation.newLocation;
 
 
                     getWeatherInfo();
                 }
+                else {
+
+                    var request = new GeolocationRequest(GeolocationAccuracy.Best);
+                    var loc = await Geolocation.GetLocationAsync(request);
+
+                    if (loc != null)
+                    {
+                        latitude = loc.Latitude;
+                        longitude = loc.Longitude;
+                        location = await GetCity(loc);
+
+
+                        getWeatherInfo();
+                    }
+
+                }
+
+                
 
 
 
@@ -86,6 +92,8 @@ namespace Weather.Views
             {
 
                 await DisplayAlert("Weather Info 20", ex.Message, "OK");
+                location = "istanbul";
+                getWeatherInfo();
 
             }
         
@@ -124,7 +132,7 @@ namespace Weather.Views
 
                     currentWeatherStatueTxt.Text = weatherInfo.weather[0].description.ToUpper();
                     currentWeatherIcon.Source = $"w{weatherInfo.weather[0].icon}";
-                    locationName.Text = weatherInfo.name.ToUpper();
+                    locationName.Text = weatherInfo.name.ToUpper()+","+weatherInfo.sys.country.ToUpper();
                     currentDegreeTxt.Text = $"{weatherInfo.main.temp.ToString("0")}°";
                     wetTxt.Text = $"{weatherInfo.main.humidity}%";
                     windTxt.Text = $"{weatherInfo.wind.speed} m/s";
@@ -141,6 +149,10 @@ namespace Weather.Views
             else
             {
                 await DisplayAlert("Weather Info24", "No weather information found", "OK");
+                location = "istanbul";
+
+
+                getWeatherInfo();
             }
         }
 
@@ -188,7 +200,8 @@ namespace Weather.Views
 
 
 
-                    //loading.IsVisible = false;
+                    loading.IsVisible = false;
+                    loadBack.IsVisible = false;
 
 
                 }
@@ -212,9 +225,6 @@ namespace Weather.Views
             await PopupNavigation.Instance.PushAsync(new AddLocation());
             await add.RelScaleTo(-3, 250, null);
             await add.TranslateTo(5, 5, 250, null);
-            
-            
-
         }
     }
 }

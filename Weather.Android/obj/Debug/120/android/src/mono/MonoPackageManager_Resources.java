@@ -3,9 +3,16 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "Weather.Android.dll" comes first in this list. */
 		"Weather.Android.dll",
+		"FFImageLoading.dll",
+		"FFImageLoading.Forms.dll",
+		"FFImageLoading.Forms.Platform.dll",
+		"FFImageLoading.Platform.dll",
+		"FFImageLoading.Svg.Forms.dll",
+		"FFImageLoading.Svg.Platform.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
 		"Rg.Plugins.Popup.dll",
+		"SkiaSharp.dll",
 		"Weather.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
