@@ -11,6 +11,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\DosisBold.ttf" />
+    <None Remove="Fonts\DosisExtraBold.ttf" />
+    <None Remove="Fonts\DosisExtraLight.ttf" />
+    <None Remove="Fonts\DosisLight.ttf" />
+    <None Remove="Fonts\DosisMedium.ttf" />
+    <None Remove="Fonts\DosisRegular.ttf" />
+    <None Remove="Fonts\DosisSemiBold.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\DosisBold.ttf" />
+    <EmbeddedResource Include="Fonts\DosisExtraBold.ttf" />
+    <EmbeddedResource Include="Fonts\DosisExtraLight.ttf" />
+    <EmbeddedResource Include="Fonts\DosisLight.ttf" />
+    <EmbeddedResource Include="Fonts\DosisMedium.ttf" />
+    <EmbeddedResource Include="Fonts\DosisRegular.ttf" />
+    <EmbeddedResource Include="Fonts\DosisSemiBold.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Rg.Plugins.Popup" Version="2.1.0" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />

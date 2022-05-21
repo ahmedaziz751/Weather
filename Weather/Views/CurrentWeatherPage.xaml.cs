@@ -188,7 +188,7 @@ namespace Weather.Views
 
 
 
-                    loading.IsVisible = false;
+                    //loading.IsVisible = false;
 
 
                 }

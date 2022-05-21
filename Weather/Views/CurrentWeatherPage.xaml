@@ -5,165 +5,353 @@
              
     x:Class="Weather.Views.CurrentWeatherPage">
     <ContentPage.Content>
-        <ScrollView Orientation="Neither">
-            <AbsoluteLayout >
-                <Image x:Name="background"
-                       Source="morning.png"
-                       AbsoluteLayout.LayoutBounds="0,-60,412,892" />
+        <Grid>
+            <Image  x:Name="background" 
+                Source="cloudy.png"
+                   Aspect="Fill" />
+            <Grid>
+
+
+                <Grid.RowDefinitions>
+
+
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+
+                </Grid.RowDefinitions>
+
+
                 <Label x:Name="locationName"
-                       FontFamily="Dosis"
-                       HorizontalTextAlignment="Center"
+                       Text="London"
+                       FontFamily="DosisSemiBold"
                        FontSize="30"
                        TextColor="#ffffff"
-                       AbsoluteLayout.LayoutBounds="100,4,202,59" />
+                       Grid.Row="0"
+                       HorizontalOptions="Center"
+                       Margin="0,5" />
+
+                
+
+
+                <Image x:Name="currentWeatherIcon"
+                       Margin="20,40"
+                       Source="w01d.png"
+                       Grid.Row="1"
+                       WidthRequest="165"
+                       HorizontalOptions="End" />
+
+                <Grid Grid.Row="1"
+                      Margin="20,40"
+                      HorizontalOptions="Start">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label x:Name="currentDegreeTxt"
+                           Text="19°"
+                           Grid.Row="0"
+                           FontFamily="DosisSemiBold"
+                           HorizontalTextAlignment="Center"
+                           FontSize="75"
+                           TextColor="#ffffff" />
+                    <Label x:Name="currentWeatherStatueTxt"
+                           Text="Sunny"
+                           Margin="0,80,0,0"
+                           Grid.Row="0"
+                           FontFamily="DosisSemiBold"
+                           HorizontalTextAlignment="Center"
+                           FontSize="30"
+                           TextColor="#ffffff" />
+                </Grid>
+
+
+
+                <BoxView Grid.Row="2"
+                         Color="Black"
+                         Margin="0,120,0,0"
+                         HorizontalOptions="Center"
+                         WidthRequest="148"
+                         HeightRequest="89"
+                         Opacity="0.5"
+                         CornerRadius="25" />
+
+
+                <Grid Grid.Row="2"
+                      HorizontalOptions="Center"
+                      Margin="0,120,0,0"
+                      WidthRequest="148"
+                      HeightRequest="89">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+
+                    </Grid.ColumnDefinitions>
+
+                    <Image x:Name="wet"
+                           Margin="15,10,0,0"
+                           Grid.Column="0"
+                           Grid.Row="0"
+                           HorizontalOptions="Start"
+                           HeightRequest="35"
+                           WidthRequest="35"
+                           Source="wet.png" />
+
+                    <Label x:Name="wetTxt"
+                           Grid.Column="0"
+                           Grid.Row="1"
+                           HorizontalOptions="Start"
+                           Margin="25,0,0,0"
+                           Text="50%"
+                           FontFamily="DosisRegular"
+                           HorizontalTextAlignment="Center"
+                           FontSize="15"
+                           TextColor="#ffffff" />
+
+
+                    <Image x:Name="wind"
+                           Source="windm.png"
+                           Margin="30,10,0,0"
+                           Grid.Column="1"
+                           Grid.Row="0"
+                           HorizontalOptions="Center"
+                           HeightRequest="35"
+                           WidthRequest="35" />
+                    <Label x:Name="windTxt"
+                           Text="20 m/s"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                           HorizontalOptions="Start"
+                           Margin="25,0,0,0"
+                           FontFamily="DosisRegular"
+                           HorizontalTextAlignment="Center"
+                           FontSize="15"
+                           TextColor="#ffffff" />
+
+
+                </Grid>
+
+                <ScrollView Orientation="Horizontal"
+                            Grid.Row="3">
+
+
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+
+
+                            <ColumnDefinition Width="120" />
+                            <ColumnDefinition Width="120" />
+                            <ColumnDefinition Width="120" />
+                            <ColumnDefinition Width="120" />
+
+
+                        </Grid.ColumnDefinitions>
+
+
+                        <BoxView Color="Black"
+                                 Opacity="0.5"
+                                 Grid.Column="0"
+                                 CornerRadius="25"
+                                 HeightRequest="196"
+                                 WidthRequest="120" />
+
+
+                        <Grid Grid.Column="0"
+                              Margin="0,20,0,0">
+
+
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+
+                            </Grid.RowDefinitions>
+
+                            <Label x:Name="day1Txt"
+                                   Grid.Row="0"
+                                   Text="Wednesday"
+                                   FontFamily="DosisMedium"
+                                   HorizontalTextAlignment="Center"
+                                   FontSize="20"
+                                   TextColor="White" />
+
+                            <Image x:Name="day1icon"
+                                   Margin="0,10,0,0"
+                                   Grid.Row="1"
+                                   Source="w13d.png"
+                                   HeightRequest="58" />
+
+                            <Label x:Name="day1DegTxt"
+                                   Margin="0,10,0,0"
+                                   Text="20°"
+                                   Grid.Row="2"
+                                   FontFamily="DosisMedium"
+                                   HorizontalTextAlignment="Center"
+                                   FontSize="20"
+                                   TextColor="#ffffff" />
+
+
+                        </Grid>
+                        
+                        <BoxView Color="Black"
+                                 Opacity="0.5"
+                                 Grid.Column="1"
+                                 CornerRadius="25"
+                                 HeightRequest="196"
+                                 WidthRequest="120" />
+
+                        <Grid Grid.Column="1"
+                              Margin="0,20,0,0">
+
+
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+
+                            </Grid.RowDefinitions>
+
+                            <Label x:Name="day2Txt"
+                                   Grid.Row="0"
+                                   Text="Friday"
+                                   FontFamily="DosisMedium"
+                                   HorizontalTextAlignment="Center"
+                                   FontSize="20"
+                                   TextColor="White" />
+
+                            <Image x:Name="day2icon"
+                                   Margin="0,10,0,0"
+                                   Grid.Row="1"
+                                   Source="w02d.png"
+                                   HeightRequest="58" />
+
+                            <Label x:Name="day2DegTxt"
+                                   Margin="0,10,0,0"
+                                   Text="14°"
+                                   Grid.Row="2"
+                                   FontFamily="DosisMedium"
+                                   HorizontalTextAlignment="Center"
+                                   FontSize="20"
+                                   TextColor="#ffffff" />
+
+
+                        </Grid>
+                        <BoxView Color="Black"
+                                 Opacity="0.5"
+                                 Grid.Column="2"
+                                 CornerRadius="25"
+                                 HeightRequest="196"
+                                 WidthRequest="120" />
+
+                        <Grid Grid.Column="2"
+                              Margin="0,20,0,0">
+
+
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+
+                            </Grid.RowDefinitions>
+
+                            <Label x:Name="day3Txt"
+                                   Grid.Row="0"
+                                   Text="Saturday"
+                                   FontFamily="DosisMedium"
+                                   HorizontalTextAlignment="Center"
+                                   FontSize="20"
+                                   TextColor="White" />
+
+                            <Image x:Name="day3icon"
+                                   Margin="0,10,0,0"
+                                   Grid.Row="1"
+                                   Source="w09d.png"
+                                   HeightRequest="58" />
+
+                            <Label x:Name="day3DegTxt"
+                                   Margin="0,10,0,0"
+                                   Text="9°"
+                                   Grid.Row="2"
+                                   FontFamily="DosisMedium"
+                                   HorizontalTextAlignment="Center"
+                                   FontSize="20"
+                                   TextColor="#ffffff" />
+
+
+                        </Grid>
+
+                        <BoxView Color="Black"
+                                 Opacity="0.5"
+                                 Grid.Column="3"
+                                 CornerRadius="25"
+                                 HeightRequest="196"
+                                 WidthRequest="120" />
+
+                        <Grid Grid.Column="3"
+                              Margin="0,20,0,0">
+
+
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+
+                            </Grid.RowDefinitions>
+
+                            <Label x:Name="day4Txt"
+                                   Grid.Row="0"
+                                   Text="Sunday"
+                                   FontFamily="DosisMedium"
+                                   HorizontalTextAlignment="Center"
+                                   FontSize="20"
+                                   TextColor="White" />
+
+                            <Image x:Name="day4icon"
+                                   Margin="0,10,0,0"
+                                   Grid.Row="1"
+                                   Source="w11d.png"
+                                   HeightRequest="58" />
+
+                            <Label x:Name="day4DegTxt"
+                                   Margin="0,10,0,0"
+                                   Text="12°"
+                                   Grid.Row="2"
+                                   FontFamily="DosisMedium"
+                                   HorizontalTextAlignment="Center"
+                                   FontSize="20"
+                                   TextColor="#ffffff" />
+
+                        </Grid>
+
+                    </Grid>
+
+                </ScrollView>
 
                 <ImageButton x:Name="add"
                              Source="add.png"
-                             AbsoluteLayout.LayoutBounds="5,4,35,35" 
-                             Clicked="handleAddButton"
-                             />
+                             Grid.Row="0"
+                             HorizontalOptions="Start"
+                             WidthRequest="40"
+                             BackgroundColor="#0000"
+                             Margin="10,5"
+                             Clicked="handleAddButton" />
 
-                <Label x:Name="currentDegreeTxt"
-                       FontFamily="Dosis"
-                       HorizontalTextAlignment="Center"
-                       FontSize="75"
-                       TextColor="#ffffff"
-                       AbsoluteLayout.LayoutBounds="10,88,197,147.5" />
+            </Grid>
 
-                <Label x:Name="currentWeatherStatueTxt"
-                       FontFamily="Dosis"
-                       HorizontalTextAlignment="Center"
-                       FontSize="20"
-                       TextColor="#ffffff"
-                       AbsoluteLayout.LayoutBounds="9,183,211,78" />
-
-                <Image x:Name="currentWeatherIcon"
-                       AbsoluteLayout.LayoutBounds="235,88,166,166" />
-
-
-
-                <Image x:Name="rectangle_8"
-                       Source="rectangle_8.png"
-                       AbsoluteLayout.LayoutBounds="134,480,148,89" />
-
-                <Image x:Name="wet"
-                       Source="wet.png"
-                       AbsoluteLayout.LayoutBounds="158,490,35,35" />
-
-                <Label x:Name="wetTxt"
-                       FontFamily="Dosis"
-                       HorizontalTextAlignment="Center"
-                       FontSize="15"
-                       TextColor="#ffffff"
-                       AbsoluteLayout.LayoutBounds="160,531,36,29.5" />
-
-                <Image x:Name="wind"
-                       Source="windm.png"
-                       AbsoluteLayout.LayoutBounds="224,490,35,35" />
-                <Label x:Name="windTxt"
-                       FontFamily="Dosis"
-                       HorizontalTextAlignment="Center"
-                       FontSize="15"
-                       TextColor="#ffffff"
-                       AbsoluteLayout.LayoutBounds="215,531,60,29.5" />
-
-                <Image x:Name="rectangle_5"
-                       Source="rectangle_5.png"
-                       AbsoluteLayout.LayoutBounds="0,582,98,196" />
-
-                <Label x:Name="day1Txt"
-                       FontFamily="Dosis"
-                       HorizontalTextAlignment="Center"
-                       FontSize="18"
-                       TextColor="#ffffff"
-                       AbsoluteLayout.LayoutBounds="-3,592,98,40" />
-
-                <Image x:Name="day1icon"
-                       AbsoluteLayout.LayoutBounds="21,631,58,58" />
-
-                <Label x:Name="day1DegTxt"
-                       FontFamily="Dosis"
-                       HorizontalTextAlignment="Center"
-                       FontSize="20"
-                       TextColor="#ffffff"
-                       AbsoluteLayout.LayoutBounds="32,712,36,40" />
-
-                <Image x:Name="rectangle_6"
-                       Source="rectangle_6.png"
-                       AbsoluteLayout.LayoutBounds="104,582,98,196" />
-
-                <Label x:Name="day2Txt"
-                       FontFamily="Dosis"
-                       HorizontalTextAlignment="Center"
-                       FontSize="18"
-                       TextColor="#ffffff"
-                       AbsoluteLayout.LayoutBounds="101,592,98,40" />
-
-                <Image x:Name="day2icon"
-                       AbsoluteLayout.LayoutBounds="124,631,58,58" />
-
-                <Label x:Name="day2DegTxt"
-                       FontFamily="Dosis"
-                       HorizontalTextAlignment="Center"
-                       FontSize="20"
-                       TextColor="#ffffff"
-                       AbsoluteLayout.LayoutBounds="136,712,36,40" />
-
-
-                <Image x:Name="rectangle_7"
-                       Source="rectangle_7.png"
-                       AbsoluteLayout.LayoutBounds="208,582,98,196" />
-
-                <Label x:Name="day3Txt"
-                       FontFamily="Dosis"
-                       HorizontalTextAlignment="Center"
-                       FontSize="18"
-                       TextColor="#ffffff"
-                       AbsoluteLayout.LayoutBounds="206,592,98,40" />
-
-                <Image x:Name="day3icon"
-                       AbsoluteLayout.LayoutBounds="230,631,58,58" />
-
-
-                <Label x:Name="day3DegTxt"
-                       FontFamily="Dosis"
-                       HorizontalTextAlignment="Center"
-                       FontSize="20"
-                       TextColor="#ffffff"
-                       AbsoluteLayout.LayoutBounds="240,712,36,40" />
-
-
-
-                <Image x:Name="rectangle_4"
-                       Source="rectangle_4.png"
-                       AbsoluteLayout.LayoutBounds="312,582,98,196" />
-
-                <Label x:Name="day4Txt"
-                       FontFamily="Dosis"
-                       HorizontalTextAlignment="Center"
-                       FontSize="18"
-                       TextColor="#ffffff"
-                       AbsoluteLayout.LayoutBounds="309,592,98,40" />
-
-                <Image x:Name="day4icon"
-                       AbsoluteLayout.LayoutBounds="332,631,58,58" />
-
-                <Label x:Name="day4DegTxt"
-                       FontFamily="Dosis"
-                       HorizontalTextAlignment="Center"
-                       FontSize="20"
-                       TextColor="#ffffff"
-                       AbsoluteLayout.LayoutBounds="344,712,36,40" />
-
-                <Image x:Name="loading"
-                       Source="loading.png"
-                       AbsoluteLayout.LayoutBounds="0,-35,412,892"
-                       />
-
-
-            </AbsoluteLayout>
-
-        </ScrollView>
+        </Grid>
 
     </ContentPage.Content>
 </ContentPage>
