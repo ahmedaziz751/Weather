@@ -1,6 +1,7 @@
 @string/appbar_scrolling_view_behavior;C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\lp\60\jl\res\layout\rootlayout.xml
 adaptive-icon;obj\Debug\120\res\mipmap-anydpi-v26\icon.xml
 adaptive-icon;obj\Debug\120\res\mipmap-anydpi-v26\icon_round.xml
+adaptive-icon;obj\Debug\120\res\mipmap-anydpi-v26\weathericon.xml
 alpha;C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\lp\60\jl\res\anim\enterfromleft.xml
 alpha;C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\lp\60\jl\res\anim\exittoleft.xml
 androidx.appcompat.widget.Toolbar;C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\lp\60\jl\res\layout\fallbacktoolbardonotuse.xml
@@ -12,6 +13,7 @@ androidx.coordinatorlayout.widget.CoordinatorLayout;C:\Users\pc\Desktop\tempt\We
 attr;C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\lp\60\jl\res\values\attrs.xml
 background;obj\Debug\120\res\mipmap-anydpi-v26\icon.xml
 background;obj\Debug\120\res\mipmap-anydpi-v26\icon_round.xml
+background;obj\Debug\120\res\mipmap-anydpi-v26\weathericon.xml
 cache-path;C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\lp\59\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 color;obj\Debug\120\res\values\colors.xml
 com.google.android.material.appbar.AppBarLayout;C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\lp\60\jl\res\layout\flyoutcontent.xml
@@ -26,6 +28,7 @@ external-cache-path;C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\
 external-path;C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\lp\59\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\120\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Debug\120\res\mipmap-anydpi-v26\icon_round.xml
+foreground;obj\Debug\120\res\mipmap-anydpi-v26\weathericon.xml
 FrameLayout;C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\lp\60\jl\res\layout\bottomtablayout.xml
 item;C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\lp\60\jl\res\values\styles.xml
 LinearLayout;C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\lp\60\jl\res\layout\bottomtablayout.xml

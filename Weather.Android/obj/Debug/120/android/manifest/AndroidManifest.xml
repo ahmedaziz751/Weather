@@ -23,7 +23,7 @@
     </intent>
   </queries>
   <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@drawable/sun" android:label="WeatherTest" android:theme="@style/MainTheme">
-    <activity android:name="crc64a3c9a36a55b6fd6f.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:exported="true" android:icon="@mipmap/icon" android:label="Weather" android:theme="@style/MainTheme">
+    <activity android:name="crc64a3c9a36a55b6fd6f.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:exported="true" android:icon="@mipmap/weathericon" android:label="Weather" android:theme="@style/MainTheme">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

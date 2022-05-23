@@ -221,12 +221,14 @@ namespace Weather.Views
 
         private async void handleAddButton(object sender, EventArgs e)
         {
+            add.IsEnabled = false;
             await add.TranslateTo(Width / 2-26.25, Height / 2 - 26.25, 250, null);
             await add.RelScaleTo(3,250,null);
             await add.RelRotateTo(1710, 1500,Easing.CubicOut);
             await PopupNavigation.Instance.PushAsync(new AddLocation());
             await add.RelScaleTo(-3, 250, null);
             await add.TranslateTo(5, 5, 250, null);
+            add.IsEnabled = true;
         }
     }
 }

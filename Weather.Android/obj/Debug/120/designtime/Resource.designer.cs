@@ -20162,7 +20162,7 @@ namespace Weather.Droid
 			public const int ic_mtrl_chip_close_circle = 2131165292;
 			
 			// aapt resource value: 0x7F07006D
-			public const int Loading = 2131165293;
+			public const int loading = 2131165293;
 			
 			// aapt resource value: 0x7F07006E
 			public const int material_cursor_drawable = 2131165294;
@@ -22490,6 +22490,15 @@ namespace Weather.Droid
 			
 			// aapt resource value: 0x7F0C0002
 			public const int launcher_foreground = 2131492866;
+			
+			// aapt resource value: 0x7F0C0003
+			public const int weathericon = 2131492867;
+			
+			// aapt resource value: 0x7F0C0004
+			public const int weathericon_adaptive_back = 2131492868;
+			
+			// aapt resource value: 0x7F0C0005
+			public const int weathericon_adaptive_fore = 2131492869;
 			
 			static Mipmap()
 			{
