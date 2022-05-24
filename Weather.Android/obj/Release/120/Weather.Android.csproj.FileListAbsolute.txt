@@ -1,10 +1,5 @@
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Release\Weather.Android.dll
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Release\Weather.Android.pdb
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Release\com.companyname.weather.apk
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Release\com.companyname.weather.aab
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Release\com.companyname.weather-Signed.aab
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Release\com.companyname.weather-Signed.apk
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Release\com.companyname.weather-Signed.apk.idsig
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Release\Weather.dll
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Release\Weather.pdb
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\MonoAndroid,Version=v12.0.AssemblyAttributes.cs
@@ -44,10 +39,7 @@ C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\Weather.Androi
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\Weather.Android.csproj.CopyComplete
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\Weather.Android.dll
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\Weather.Android.pdb
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\bin\com.companyname.weather.apk
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\bin\base.zip
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\bin\com.companyname.weather.aab
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\bin\com.companyname.weather.apks
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\res\values\styles.xml
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\res\values\colors.xml
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\res\mipmap-anydpi-v26\icon.xml
@@ -513,7 +505,6 @@ C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\src\mo
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\src\mono\com\google\android\material\tabs\TabLayout_BaseOnTabSelectedListenerImplementor.java
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\src\mono\MonoPackageManager_Resources.java
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\bin\packaged_resources
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\src\com\companyname\weather\R.java
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\compressed_assemblies.arm64-v8a.s
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\compressed_assemblies.armeabi-v7a.s
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\compressed_assemblies.x86.s
@@ -542,3 +533,14 @@ C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\stamp\_Convert
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\stamp\_GenerateJavaStubs.stamp
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Release\com.AA.weather.apk
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Release\com.AA.weather.aab
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Release\com.AA.weather-Signed.aab
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Release\com.AA.weather-Signed.apk
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Release\com.AA.weather-Signed.apk.idsig
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\bin\com.AA.weather.apk
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\bin\com.AA.weather.aab
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\bin\com.AA.weather.apks
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\assets\Xamarin.AndroidX.Browser.dll
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\assets\Xamarin.AndroidX.Browser.pdb
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Release\120\android\src\com\aa\weather\R.java

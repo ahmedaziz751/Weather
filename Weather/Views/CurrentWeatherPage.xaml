@@ -2,15 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              NavigationPage.HasNavigationBar="false"
-             
-    x:Class="Weather.Views.CurrentWeatherPage">
+             x:Class="Weather.Views.CurrentWeatherPage">
     <ContentPage.Content>
         <Grid>
             <Image  x:Name="background"
                     Source="cloudy.png"
                     Aspect="Fill" />
 
-            
+
 
             <Grid>
 
@@ -36,15 +35,18 @@
                        HorizontalOptions="Center"
                        Margin="0,5" />
 
-                
 
 
-                <Image x:Name="currentWeatherIcon"
-                       Margin="20,40"
-                       Source="w01d.png"
-                       Grid.Row="1"
-                       WidthRequest="165"
-                       HorizontalOptions="End" />
+
+                <ImageButton x:Name="currentWeatherIcon"
+                             BackgroundColor="#0000"
+                             Margin="20,40"
+                             Source="w01d.png"
+                             Grid.Row="1"
+                             WidthRequest="165"
+                             HeightRequest="165"
+                             HorizontalOptions="End"
+                             Clicked="redirect" />
 
                 <Grid Grid.Row="1"
                       Margin="20,40"
@@ -189,11 +191,13 @@
                                    FontSize="20"
                                    TextColor="White" />
 
-                            <Image x:Name="day1icon"
-                                   Grid.Row="1"
-                                   VerticalOptions="Center"
-                                   Source="w13d.png"
-                                   HeightRequest="58" />
+                            <ImageButton x:Name="day1icon"
+                                         BackgroundColor="#0000"
+                                         Grid.Row="1"
+                                         VerticalOptions="Center"
+                                         Source="w13d.png"
+                                         HeightRequest="58"
+                                         Clicked="redirect" />
 
                             <Label x:Name="day1DegTxt"
                                    Text="20°"
@@ -206,7 +210,7 @@
 
 
                         </Grid>
-                        
+
                         <BoxView Color="Black"
                                  Opacity="0.5"
                                  Grid.Column="1"
@@ -234,11 +238,13 @@
                                    FontSize="20"
                                    TextColor="White" />
 
-                            <Image x:Name="day2icon"
-                                   Grid.Row="1"
-                                   Source="w02d.png"
-                                   VerticalOptions="Center"
-                                   HeightRequest="58" />
+                            <ImageButton x:Name="day2icon"
+                                         BackgroundColor="#0000"
+                                         Grid.Row="1"
+                                         Source="w02d.png"
+                                         VerticalOptions="Center"
+                                         HeightRequest="58"
+                                         Clicked="redirect" />
 
                             <Label x:Name="day2DegTxt"
                                    Text="14°"
@@ -278,11 +284,13 @@
                                    FontSize="20"
                                    TextColor="White" />
 
-                            <Image x:Name="day3icon"
-                                   Grid.Row="1"
-                                   Source="w09d.png"
-                                   VerticalOptions="Center"
-                                   HeightRequest="58" />
+                            <ImageButton x:Name="day3icon"
+                                         BackgroundColor="#0000"
+                                         Grid.Row="1"
+                                         Source="w09d.png"
+                                         VerticalOptions="Center"
+                                         Clicked="redirect"
+                                         HeightRequest="58" />
 
                             <Label x:Name="day3DegTxt"
                                    Text="9°"
@@ -323,11 +331,13 @@
                                    FontSize="20"
                                    TextColor="White" />
 
-                            <Image x:Name="day4icon"
-                                   Grid.Row="1"
-                                   Source="w11d.png"
-                                   VerticalOptions="Center"
-                                   HeightRequest="58" />
+                            <ImageButton x:Name="day4icon"
+                                         BackgroundColor="#0000"
+                                         Grid.Row="1"
+                                         Source="w11d.png"
+                                         VerticalOptions="Center"
+                                         Clicked="redirect"
+                                         HeightRequest="58" />
 
                             <Label x:Name="day4DegTxt"
                                    Text="12°"
@@ -356,15 +366,16 @@
 
                 <BoxView Color="#0000"
                          Grid.Row="4"
-                         VerticalOptions="FillAndExpand"/>
+                         VerticalOptions="FillAndExpand" />
 
             </Grid>
             <BoxView x:Name="loadBack"
-                     Color="#030303" IsVisible="true" />
-            <Image  x:Name="loading" 
-                Source="loading.gif"
-                   IsAnimationPlaying="True" 
-                   IsVisible="true"/>
+                     Color="#030303"
+                     IsVisible="true" />
+            <Image  x:Name="loading"
+                    Source="loading.gif"
+                    IsAnimationPlaying="True"
+                    IsVisible="true" />
 
         </Grid>
 

@@ -3,9 +3,10 @@
                  xmlns="http://xamarin.com/schemas/2014/forms"
                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                  xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
-                 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+                 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                 xmlns:weather="clr-namespace:Weather">
 
-    
+
     <pages:PopupPage.Animation>
         <animations:ScaleAnimation DurationIn="400"
                                    DurationOut="300"
@@ -16,32 +17,136 @@
                                    PositionOut="Center"
                                    ScaleIn="1.2"
                                    ScaleOut="0.8" />
+
     </pages:PopupPage.Animation>
+
+
 
     <StackLayout Margin="12"
                  Padding="30"
-                 BackgroundColor="#FFFFFF"
+                 BackgroundColor="White"
                  HorizontalOptions="Center"
-                 VerticalOptions="Center"
-                 >
-
-
-        <Entry x:Name="location" 
-            FontSize="20"
+                 VerticalOptions="Center">
+        <Entry x:Name="location"
+               FontSize="20"
                Placeholder="Type city name"
+               FontFamily="DosisSemiBold"
                TextColor="Black"
                Margin="50,0,50,0"
-               WidthRequest="300" />
+               WidthRequest="300"
+               PlaceholderColor="#39413b" />
 
-        <Button BackgroundColor="Black"
-                Font="Dosis"
+        <Button BackgroundColor="#39413b"
+                FontFamily="DosisSemiBold"
                 FontSize="25"
                 Text="View"
                 TextColor="White"
                 Margin="50,20,50,0"
                 WidthRequest="300"
-                Clicked="Button_Clicked"
-                CornerRadius="25"/>
+                Clicked="Button_click"
+                CornerRadius="25" />
+        <Label Text="Suggestions"
+               TextColor="#39413b"
+               Margin="20,20,20,20"
+               FontFamily="DosisSemiBold" />
+
+        <Grid ColumnDefinitions="1*, 1*, 1*"
+              RowDefinitions="1*, 1*, 1*">
+            <Button Grid.Row="0"
+                    Grid.Column="0"
+                    BackgroundColor="Silver"
+                    x:Name="sug1"
+                    Font="Dosis"
+                    FontSize="10"
+                    Text="Batman"
+                    TextColor="Black"
+                    FontFamily="DosisSemiBold"
+                    Margin="0"
+                    WidthRequest="20"
+                    HeightRequest="50"
+                    Clicked="sug1_btnClick"
+                    CornerRadius="25" />
+
+            <Button Grid.Row="0"
+                    Grid.Column="1"
+                    BackgroundColor="Silver"
+                    x:Name="sug2"
+                    Font="Dosis"
+                    FontSize="10"
+                    TextColor="Black"
+                    Text="Istanbul"
+                    FontFamily="DosisSemiBold"
+                    Margin="0"
+                    WidthRequest="20"
+                    HeightRequest="50"
+                    Clicked="sug2_btnClick"
+                    CornerRadius="25" />
+
+            <Button Grid.Row="0"
+                    Grid.Column="2"
+                    BackgroundColor="Silver"
+                    x:Name="sug3"
+                    Font="Dosis"
+                    FontSize="10"
+                    TextColor="Black"
+                    Text="Tokyo"
+                    FontFamily="DosisSemiBold"
+                    Margin="0"
+                    WidthRequest="20"
+                    HeightRequest="50"
+                    Clicked="sug3_btnClick"
+                    CornerRadius="25" />
+
+            <Button Grid.Row="1"
+                    Grid.Column="0"
+                    BackgroundColor="Silver"
+                    x:Name="sug4"
+                    Font="Dosis"
+                    FontSize="10"
+                    Text="New York"
+                    TextColor="Black"
+                    FontFamily="DosisSemiBold"
+                    Margin="0"
+                    WidthRequest="20"
+                    HeightRequest="50"
+                    Clicked="sug4_btnClick"
+                    CornerRadius="25" />
+
+            <Button Grid.Row="1"
+                    Grid.Column="1"
+                    BackgroundColor="Silver"
+                    x:Name="sug5"
+                    Font="Dosis"
+                    FontSize="10"
+                    TextColor="Black"
+                    Text="Ankara"
+                    FontFamily="DosisSemiBold"
+                    Margin="0"
+                    WidthRequest="20"
+                    HeightRequest="50"
+                    Clicked="sug5_btnClick"
+                    CornerRadius="25" />
+
+            <Button Grid.Row="1"
+                    Grid.Column="2"
+                    BackgroundColor="Silver"
+                    x:Name="sug6"
+                    Font="Dosis"
+                    FontSize="10"
+                    TextColor="Black"
+                    Text="Paris"
+                    FontFamily="DosisSemiBold"
+                    Margin="0"
+                    WidthRequest="20"
+                    HeightRequest="50"
+                    Clicked="sug6_btnClick"
+                    CornerRadius="25" />
+        </Grid>
+
+
     </StackLayout>
+
+
+
 </pages:PopupPage>
     

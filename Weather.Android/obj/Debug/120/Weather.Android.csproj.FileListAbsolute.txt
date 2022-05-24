@@ -1,10 +1,5 @@
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Debug\Weather.Android.dll
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Debug\Weather.Android.pdb
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Debug\com.companyname.weather.apk
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Debug\com.companyname.weather.aab
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Debug\com.companyname.weather-Signed.aab
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Debug\com.companyname.weather-Signed.apk
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Debug\com.companyname.weather-Signed.apk.idsig
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Debug\Weather.dll
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Debug\Weather.pdb
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\MonoAndroid,Version=v12.0.AssemblyAttributes.cs
@@ -28,10 +23,7 @@ C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\Weather.Android.
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\Weather.Android.csproj.CopyComplete
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\Weather.Android.dll
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\Weather.Android.pdb
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\android\bin\com.companyname.weather.apk
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\android\bin\base.zip
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\android\bin\com.companyname.weather.aab
-C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\android\bin\com.companyname.weather.apks
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\res\values\styles.xml
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\res\values\colors.xml
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\res\mipmap-anydpi-v26\icon.xml
@@ -720,3 +712,12 @@ C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\res\mipmap-xxhdp
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\res\mipmap-xxxhdpi\weathericon.png
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\res\mipmap-xxxhdpi\weathericon_adaptive_back.png
 C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\res\mipmap-xxxhdpi\weathericon_adaptive_fore.png
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Debug\com.AA.weather.apk
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Debug\com.AA.weather.aab
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Debug\com.AA.weather-Signed.aab
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Debug\com.AA.weather-Signed.apk
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\bin\Debug\com.AA.weather-Signed.apk.idsig
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\android\bin\com.AA.weather.apk
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\android\bin\com.AA.weather.aab
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\android\bin\com.AA.weather.apks
+C:\Users\pc\Desktop\tempt\Weather\Weather.Android\obj\Debug\120\android\src\com\aa\weather\R.java

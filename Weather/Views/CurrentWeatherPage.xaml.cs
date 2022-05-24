@@ -19,7 +19,7 @@ namespace Weather.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CurrentWeatherPage : ContentPage
     {
-        
+
         public CurrentWeatherPage()
         {
             InitializeComponent();
@@ -54,6 +54,8 @@ namespace Weather.Views
         public double latitude { get; set; }
         public double longitude { get; set; }
 
+        int locId { get; set; }
+
 
         private async void getLocation()
         {
@@ -63,7 +65,6 @@ namespace Weather.Views
                 if (ChangeLocation.newLocation != null)
                 {
                     location = ChangeLocation.newLocation;
-
 
                     getWeatherInfo();
                 }
@@ -101,10 +102,11 @@ namespace Weather.Views
                 getWeatherInfo();
 
             }
-        
+
         }
 
-        private async Task<String> GetCity(Location loc) {
+        private async Task<String> GetCity(Location loc)
+        {
 
 
             var city = await Geocoding.GetPlacemarksAsync(loc);
@@ -116,7 +118,7 @@ namespace Weather.Views
             }
 
             return null;
-            
+
 
         }
 
@@ -127,7 +129,6 @@ namespace Weather.Views
             var url = $"https://api.openweathermap.org/data/2.5/weather?q={location}&units=metric&appid={key}";
             var result = await ApiCaller.Get(url);
 
-
             if (result.Successful)
             {
                 try
@@ -137,12 +138,13 @@ namespace Weather.Views
 
                     currentWeatherStatueTxt.Text = weatherInfo.weather[0].description;
                     currentWeatherIcon.Source = $"w{weatherInfo.weather[0].icon}";
-                    locationName.Text = weatherInfo.name.ToUpper()+","+weatherInfo.sys.country.ToUpper();
+                    locationName.Text = weatherInfo.name.ToUpper() + "," + weatherInfo.sys.country.ToUpper();
                     currentDegreeTxt.Text = $"{weatherInfo.main.temp.ToString("0")}°";
                     wetTxt.Text = $"{weatherInfo.main.humidity}%";
                     windTxt.Text = $"{weatherInfo.wind.speed} m/s";
 
                     var dt = new DateTime().ToUniversalTime().AddSeconds(weatherInfo.dt);
+                    locId = weatherInfo.id;
 
                     getForecast();
                 }
@@ -168,7 +170,7 @@ namespace Weather.Views
 
             if (result.Successful)
             {
-                try 
+                try
                 {
                     var forcastInfo = JsonConvert.DeserializeObject<ForecastInfo>(result.Response);
 
@@ -178,7 +180,8 @@ namespace Weather.Views
                     {
                         var date = DateTime.Parse(list.dt_txt);
 
-                        if (date > DateTime.Now && date.Hour == 12 && date.Minute == 0 && date.Second == 0) { 
+                        if (date > DateTime.Now && date.Hour == 12 && date.Minute == 0 && date.Second == 0)
+                        {
                             allList.Add(list);
                         }
 
@@ -201,8 +204,6 @@ namespace Weather.Views
                     day4icon.Source = $"w{allList[3].weather[0].icon}";
                     day4DegTxt.Text = $"{allList[3].main.temp.ToString("0")}°";
 
-
-
                     loading.IsVisible = false;
                     loadBack.IsVisible = false;
 
@@ -222,13 +223,35 @@ namespace Weather.Views
         private async void handleAddButton(object sender, EventArgs e)
         {
             add.IsEnabled = false;
-            await add.TranslateTo(Width / 2-26.25, Height / 2 - 26.25, 250, null);
-            await add.RelScaleTo(3,250,null);
-            await add.RelRotateTo(1710, 1500,Easing.CubicOut);
+            await add.TranslateTo(Width / 2 - 26.25, Height / 2 - 26.25, 250, null);
+            await add.RelScaleTo(3, 250, null);
+            await add.RelRotateTo(1710, 1500, Easing.CubicOut);
             await PopupNavigation.Instance.PushAsync(new AddLocation());
             await add.RelScaleTo(-3, 250, null);
             await add.TranslateTo(5, 5, 250, null);
             add.IsEnabled = true;
         }
+
+
+        private async void redirect(object sender, EventArgs e)
+        {
+            await openWeb();
+        }
+
+        private async Task openWeb()
+        {
+
+            try
+            {
+                await Browser.OpenAsync("https://openweathermap.org/city/" + locId, BrowserLaunchMode.SystemPreferred);
+
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Exeption 000042", ex.ToString(), "K");
+            }
+        }
+
+
     }
 }
