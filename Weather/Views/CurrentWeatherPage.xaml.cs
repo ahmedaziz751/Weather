@@ -24,6 +24,7 @@ namespace Weather.Views
         {
             InitializeComponent();
             getLocation();
+            LocationSuggestions.RandomInt();
             background.Source = $"{date()}.png";
         }
 
